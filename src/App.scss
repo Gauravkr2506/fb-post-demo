@@ -1,0 +1,25 @@
+.container {
+  background-color: #cccccc;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.surface {
+  background-color: #f2f2f2;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* align-items: center; */
+}
+.post {
+  background-color: #fcfcfc;
+  width: 80%;
+  height: 50%;
+  margin-top: 50px;
+}

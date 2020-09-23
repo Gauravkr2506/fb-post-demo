@@ -1,0 +1,114 @@
+body {
+  background: #2c3e50;
+}
+
+nav {
+  position: relative;
+  display: inline-flex;
+  /* margin: 270px auto 0; */
+  /* widows: 800px; */
+  /* height: 50; */
+  /* background: #34495e; */
+  background: white;
+  /* border-radius: 8px; */
+  font-size: 0;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+  padding: 4px 20px;
+}
+.selected {
+  color: blue !important;
+  border-bottom: 2px solid #1abc9c;
+  transition: all 0.5s ease 0s;
+}
+
+// nav .animation {
+//   position: absolute;
+//   height: 2px;
+//   bottom: 0;
+//   z-index: 0;
+//   background: #1abc9c;
+//   border-radius: 8px;
+//   transition: all 0.5s ease 0s;
+// }
+
+// .navLink a:nth-child(1) {
+//   width: 100px;
+// }
+// nav .tab-1,
+// .navLink a:nth-child(1).selected ~ .animation {
+//   width: 100px;
+//   left: 0px;
+// }
+
+// .navLink a:nth-child(2) {
+//   width: 80px;
+// }
+// nav .tab-2,
+// .navLink  a:nth-child(2).selected ~ .animation {
+//   width: 80px;
+//   left: 100px;
+// }
+
+// .navLink a:nth-child(3) {
+//   width: 80px;
+// }
+// nav .tab-2,
+// .navLink a:nth-child(3).selected ~ .animation {
+//   width: 80px;
+//   left: 180px;
+// }
+
+// a:nth-child(4) {
+//   width: 80px;
+// }
+// nav .tab-4,
+// .navLink a:nth-child(4).selected ~ .animation {
+//   width: 80px;
+//   left: 260px;
+// }
+
+// .navLink a:nth-child(5) {
+//   width: 80px;
+// }
+// nav .tab-5,
+// .navLink a:nth-child(5).selected ~ .animation {
+//   width: 80px;
+//   left: 340px;
+// }
+
+// .navLink a:nth-child(6) {
+//   width: 80px;
+// }
+// nav .tab-6,
+// .navLink a:nth-child(6).selected ~ .animation {
+//   width: 80px;
+//   left: 420px;
+// }
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.listItem {
+  position: inherit;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom: 1px solid #dadde1;
+  padding: 10px;
+  /* width: 500px; */
+}

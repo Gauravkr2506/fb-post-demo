@@ -1,0 +1,120 @@
+.borderBottom {
+  border-bottom: 1px solid #dadde1;
+  margin: 10;
+}
+.paddingBottom {
+  padding-bottom: 20px;
+}
+
+.reactionGroup {
+  display: none;
+  position: absolute;
+  top: -90px;
+  left: -52px;
+  padding: 50px;
+}
+.footerLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4px 8px;
+}
+.button {
+  justify-content: center;
+  align-items: center;
+  padding: 8px 22px;
+  display: flex;
+  &:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
+  &.likeactive {
+    color: rgb(32, 120, 244);
+    font-weight: bold;
+  }
+  &.loveactive {
+    color: rgb(243, 62, 88);
+    font-weight: bold;
+  }
+  &.hahaactive {
+    color: rgb(247, 177, 37);
+    font-weight: bold;
+  }
+  &.angryactive {
+    color: rgb(233, 113, 15);
+    font-weight: bold;
+  }
+  .icons {
+    margin-right: 4px;
+    &.likeIcon {
+      background-image: url(/assets/likeIcon.png);
+      height: 18px;
+      width: 18px;
+      background-position: 0px 0px;
+    }
+    &.activelikeIcon {
+      background-image: url(/assets/footerIcons.png);
+      background-position: 0 -191px;
+      height: 18px;
+      width: 18px;
+    }
+    &.commentIcon {
+      background-image: url(/assets/footerIcons.png);
+      background-position: 0 -153px;
+      height: 18px;
+      width: 18px;
+    }
+    &.shareIcon {
+      background-image: url(/footerIcons.png);
+      width: 18px;
+      height: 18px;
+      background-position: 0 -267px;
+    }
+    &.loveIcon {
+      background-image: url(/assets/love.jpg);
+      background-size: 18px 18px;
+      // background-position: 0 0px;
+      height: 18px;
+      width: 18px;
+    }
+    &.wowIcon {
+      background-image: url(/assets/wow.png);
+      background-size: 18px 18px;
+      // background-position: 0 0px;
+      height: 18px;
+      width: 18px;
+    }
+    &.angryIcon {
+      background-image: url(/assets/angry.jpg);
+      background-size: 18px 18px;
+      // background-position: 0 0px;
+      height: 18px;
+      width: 18px;
+    }
+    &.hahaIcon {
+      background-image: url(/assets/haha.jpg);
+      background-size: 18px 18px;
+      // background-position: 0 0px;
+      height: 18px;
+      width: 18px;
+    }
+    &.sadIcon {
+      background-image: url(/assets/sad.png);
+      background-size: 18px 18px;
+      // background-position: 0 0px;
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+.button:hover .reactionGroup {
+  display: block;
+}
+
+.button:visited .reactionGroup {
+  padding: 0px;
+}
+
+.hide {
+  display: none !important;
+}

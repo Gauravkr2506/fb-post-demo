@@ -1,0 +1,90 @@
+.Overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .65);
+}
+
+.Content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    overflow: auto;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.Content:after {
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+    content: '';
+}
+
+.Dialog {
+    position: relative;
+    outline: 0;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    min-width: 50%;
+    cursor: default;
+    border-radius: 4px;
+    padding: 16px;
+    background-color: white;
+}
+
+.CrossIcon {
+    cursor:'pointer';
+    float:'right'; 
+    margin-top: '5px';
+    width: '20px';
+}
+/* .Dialog {
+
+}
+
+.Content {
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top: 30%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .65);
+} */
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
+}
