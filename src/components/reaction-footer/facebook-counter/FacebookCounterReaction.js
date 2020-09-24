@@ -1,7 +1,7 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
 import reactCSS from "reactcss";
-import icons from "./helpers/icons";
+import icons from "../../../helpers/icons";
 
 export const FacebookCounterReaction = ({ reaction, bg, index, user_list }) => {
   const styles = reactCSS({

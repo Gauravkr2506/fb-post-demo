@@ -118,3 +118,10 @@
 .hide {
   display: none !important;
 }
+
+@media only screen and (max-width: 350px) {
+  .footerLink {
+    margin: 0px;
+    padding: 0px;
+  }
+}

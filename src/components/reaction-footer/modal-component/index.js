@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, createRef } from "react";
 import { createPortal } from "react-dom";
 import PropTypes from "prop-types";
-import { ReactComponent as Cross } from "./cross.svg";
+import { ReactComponent as Cross } from "./../../../assets/images/cross.svg";
 import "./style.css";
 
 const modalContext = createContext();

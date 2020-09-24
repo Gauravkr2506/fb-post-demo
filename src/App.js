@@ -1,15 +1,9 @@
-import React, { Component } from "react";
-// import { FacebookSelector } from "react-reactions";
+import React from "react";
 import "./App.scss";
 import PostHeader from "./components/post-header";
 import ReactionFooter from "./components/reaction-footer/reaction-footer";
-
 import PostImage from "./assets/images/post.jpg";
-import {
-  reaction_data,
-  user_content_reaction,
-  users,
-} from "./components/dummy_data";
+import { reaction_data, user_content_reaction, users } from "./data/dummy_data";
 
 const id_to_emoji = reaction_data.reduce((a, v) => {
   a[v.id] = { ...v, name: v.name.toLocaleLowerCase() };
@@ -41,29 +35,27 @@ const user_group = counters.reduce((a, v) => {
 }, {});
 user_group["all"] = counters;
 
-export default class App extends Component {
-  componentDidMount() {}
-  render() {
-    return (
-      <div className="container">
-        <div className="surface">
-          {[1, 2, 3].map((itm) => (
-            <div className="post">
-              <PostHeader />
-              <img
-                style={{ width: "100%", paddingBottom: 10 }}
-                src={PostImage}
-              />
-              <ReactionFooter
-                id={itm}
-                user={"Gaurav"}
-                counters={counters}
-                user_group={user_group}
-              />
-            </div>
-          ))}
-        </div>
+export default () => {
+  return (
+    <div className="container">
+      <div className="surface">
+        {[1, 2, 3].map((item) => (
+          <div className="post" key={item}>
+            <PostHeader />
+            <img
+              style={{ width: "100%", paddingBottom: 10 }}
+              src={PostImage}
+              alt="post"
+            />
+            <ReactionFooter
+              id={item}
+              user={"Gaurav"}
+              counters={counters}
+              user_group={user_group}
+            />
+          </div>
+        ))}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};

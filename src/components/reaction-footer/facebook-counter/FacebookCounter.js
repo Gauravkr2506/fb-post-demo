@@ -2,7 +2,7 @@ import React from "react";
 import reactCSS from "reactcss";
 import ReactTooltip from "react-tooltip";
 import _ from "lodash";
-import { listOfNames } from "./helpers/strings";
+import { listOfNames } from "../../../helpers/strings";
 
 import FacebookCounterReaction from "./FacebookCounterReaction";
 

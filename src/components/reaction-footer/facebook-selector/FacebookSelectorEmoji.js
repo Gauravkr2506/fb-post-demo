@@ -2,9 +2,9 @@
 
 import React from "react";
 import reactCSS, { hover } from "reactcss";
-import active from "./helpers/active";
+import active from "../../../helpers/active";
 
-export const GithubSelectorEmoji = ({ icon, label, onSelect, hover }) => {
+export const FbSelectorEmoji = ({ icon, label, onSelect, hover }) => {
   const styles = reactCSS(
     {
       default: {
@@ -62,4 +62,4 @@ export const GithubSelectorEmoji = ({ icon, label, onSelect, hover }) => {
   );
 };
 
-export default hover(active(GithubSelectorEmoji));
+export default hover(active(FbSelectorEmoji));

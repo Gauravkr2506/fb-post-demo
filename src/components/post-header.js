@@ -16,6 +16,7 @@ export default class PostHeader extends Component {
             <img
               style={{ borderRadius: "50%", width: 50, padding: 5 }}
               src={DiscoveryImage}
+              alt="post"
             />
           </div>
           <div style={{ flex: 9, display: "flex", flexDirection: "column" }}>

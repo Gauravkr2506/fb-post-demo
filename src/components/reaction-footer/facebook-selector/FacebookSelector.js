@@ -1,7 +1,7 @@
 import React from "react";
 import reactCSS from "reactcss";
 import _ from "lodash";
-import icons from "./helpers/icons";
+import icons from "../../../helpers/icons";
 
 import FacebookSelectorEmoji from "./FacebookSelectorEmoji";
 

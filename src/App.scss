@@ -1,3 +1,6 @@
+body {
+  margin: 0px;
+}
 .container {
   background-color: #cccccc;
   height: 100%;
@@ -22,4 +25,16 @@
   width: 80%;
   height: 50%;
   margin-top: 50px;
+}
+@media only screen and (max-width: 700px) {
+  .surface {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .post {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
